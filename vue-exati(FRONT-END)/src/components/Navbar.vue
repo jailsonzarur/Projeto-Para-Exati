@@ -28,7 +28,7 @@
                 <a
                   href="/jobs/add"
                   class="text-black bg-black-900 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                  >Add Job</a
+                  >Adicionar Job</a
                 >
               </div>
             </div>
