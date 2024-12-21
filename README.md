@@ -4,13 +4,6 @@ Este projeto é composto por duas aplicações: um back-end desenvolvido em **Ja
 
 ---
 
-## **Estrutura do Projeto**
-A estrutura do projeto é organizada da seguinte forma:
-
-Projeto-Para-Exati/ ├── java-springboot-exati(BACK-END)/springboot/ # Back-end em Java └── vue-tailwind-exati(FRONT-END)/ # Front-end em Vue.js
-
----
-
 ## **Back-End**
 
 O back-end foi desenvolvido em **Java** utilizando o framework **Spring Boot**.
