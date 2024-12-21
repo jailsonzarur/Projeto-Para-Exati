@@ -36,7 +36,7 @@ O back-end foi desenvolvido em **Java** utilizando o framework **Spring Boot**.
 
 Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funcionalidades:
 
-1. Cadastrar um Job/Vaga
+###1. Cadastrar um Job/Vaga
 - **Descrição:** Permite registrar uma nova vaga no catálogo, incluindo informações como título, descrição e requisitos.
 - **Endpoints:**
   - `POST /vagas`
@@ -45,19 +45,19 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
     - Descrição
     - Requisitos
 
-2. Retornar uma vaga pelo ID
+###2. Retornar uma vaga pelo ID
 - **Descrição:** Busca informações detalhadas de uma vaga específica utilizando o ID.
 - **Endpoints:**
   - `GET /vagas/{id}`
   - **Parâmetro necessário:**
     - `id`: ID da vaga
 
-3. Retornar todas as vagas
+###3. Retornar todas as vagas
 - **Descrição:** Lista todas as vagas cadastradas no sistema.
 - **Endpoints:**
   - `GET /vagas`
 
-4. Atualizar uma vaga
+###4. Atualizar uma vaga
 - **Descrição:** Atualiza as informações de uma vaga já existente no catálogo, com base no ID.
 - **Endpoints:**
   - `PUT /vagas/{id}`
@@ -68,7 +68,7 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
     - Descrição
     - Requisitos
 
-5. Deletar uma vaga
+###5. Deletar uma vaga
 - **Descrição:** Remove uma vaga específica do catálogo utilizando o ID.
 - **Endpoints:**
   - `DELETE /vagas/{id}`
