@@ -13,7 +13,7 @@ O back-end foi desenvolvido em **Java** utilizando o framework **Spring Boot**.
    ```bash
    cd java-springboot-exati(BACK-END)/springboot
 
-2. Configure o arquivo application.properties (ou application.yml) localizado em src/main/resources/. Um exemplo de configuração para PostgreSQL:
+2. Configure o arquivo application.properties (ou application.yml) localizado em src/main/resources/. Um exemplo de configuração para PostgreSQL(No código estão configurados minhas próprias chaves, então trate de trocar):
 
    ```properties
    spring.datasource.url=jdbc:postgresql://localhost:5432/seu_banco
