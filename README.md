@@ -22,3 +22,13 @@ O back-end foi desenvolvido em **Java** utilizando o framework **Spring Boot**.
    spring.jpa.hibernate.ddl-auto=update
    spring.jpa.show-sql=true
 
+## **Executar o Back-End**
+
+1. Compile e execute o projeto com Maven:
+   ```bash
+   ./mvnw spring-boot:run
+
+2. O servidor será iniciado e estará acessível em:
+   ```bash
+   http://localhost:8080
+
