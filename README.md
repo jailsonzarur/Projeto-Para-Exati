@@ -15,6 +15,7 @@ O back-end foi desenvolvido em **Java** utilizando o framework **Spring Boot**.
 
 2. Configure o arquivo application.properties (ou application.yml) localizado em src/main/resources/. Um exemplo de configuração para PostgreSQL:
 
+   ```properties
    spring.datasource.url=jdbc:postgresql://localhost:5432/seu_banco
    spring.datasource.username=seu_usuario
    spring.datasource.password=sua_senha
