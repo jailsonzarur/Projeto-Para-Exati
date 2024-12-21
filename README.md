@@ -39,7 +39,7 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 ### 1. Cadastrar um Job/Vaga
 - **Descrição:** Permite registrar uma nova vaga no catálogo, incluindo informações como título, descrição e requisitos.
 - **Endpoints:**
-  - `POST /vagas`
+  - `POST /jobs`
   - **Parâmetros necessários:**
     - Título
     - Descrição
@@ -48,19 +48,19 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 ### 2. Retornar uma vaga pelo ID
 - **Descrição:** Busca informações detalhadas de uma vaga específica utilizando o ID.
 - **Endpoints:**
-  - `GET /vagas/{id}`
+  - `GET /jobs/{id}`
   - **Parâmetro necessário:**
     - `id`: ID da vaga
 
 ### 3. Retornar todas as vagas
 - **Descrição:** Lista todas as vagas cadastradas no sistema.
 - **Endpoints:**
-  - `GET /vagas`
+  - `GET /jobs`
 
 ### 4. Atualizar uma vaga
 - **Descrição:** Atualiza as informações de uma vaga já existente no catálogo, com base no ID.
 - **Endpoints:**
-  - `PUT /vagas/{id}`
+  - `PUT /jobs/{id}`
   - **Parâmetro necessário:**
     - `id`: ID da vaga a ser atualizada
   - **Parâmetros editáveis:**
@@ -71,7 +71,7 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 ### 5. Deletar uma vaga
 - **Descrição:** Remove uma vaga específica do catálogo utilizando o ID.
 - **Endpoints:**
-  - `DELETE /vagas/{id}`
+  - `DELETE /jobs/{id}`
   - **Parâmetro necessário:**
     - `id`: ID da vaga a ser removida
 
