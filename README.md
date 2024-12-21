@@ -22,4 +22,3 @@ O back-end foi desenvolvido em **Java** utilizando o framework **Spring Boot**.
    spring.jpa.hibernate.ddl-auto=update
    spring.jpa.show-sql=true
 
-
