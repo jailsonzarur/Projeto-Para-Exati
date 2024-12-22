@@ -41,9 +41,10 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 - **Endpoints:**
   - `POST /jobs`
   - **Parâmetros necessários:**
-    - Título
-    - Descrição
-    - Requisitos
+    - Título (title)
+    - Descrição (job_description)
+    - Salário (salary)
+    - Sobre a Empresa (company_info)
 
 ### 2. Retornar uma vaga pelo ID
 - **Descrição:** Busca informações detalhadas de uma vaga específica utilizando o ID.
@@ -64,9 +65,10 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
   - **Parâmetro necessário:**
     - `id`: ID da vaga a ser atualizada
   - **Parâmetros editáveis:**
-    - Título
-    - Descrição
-    - Requisitos
+    - Título (title)
+    - Descrição (job_description)
+    - Salário (salary)
+    - Sobre a Empresa (company_info)
 
 ### 5. Deletar uma vaga
 - **Descrição:** Remove uma vaga específica do catálogo utilizando o ID.
