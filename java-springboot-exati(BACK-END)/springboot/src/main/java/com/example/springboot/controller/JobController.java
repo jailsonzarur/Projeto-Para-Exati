@@ -18,7 +18,10 @@ import java.util.UUID;
 import static  org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static  org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class JobController {
 
     @Autowired

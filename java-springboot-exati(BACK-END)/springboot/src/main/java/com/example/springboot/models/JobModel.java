@@ -19,6 +19,8 @@ public class JobModel extends RepresentationModel<JobModel> implements Serializa
     private String job_description;
     private BigDecimal salary;
     private String company_info;
+    private String job_style;
+    private String job_location;
 
     public UUID getIdJob() {
         return idJob;
@@ -40,6 +42,14 @@ public class JobModel extends RepresentationModel<JobModel> implements Serializa
         return company_info;
     }
 
+    public String getJob_style() {
+        return job_style;
+    }
+
+    public String getJob_location() {
+        return job_location;
+    }
+
     public void setIdJob(UUID idJob) {
         this.idJob = idJob;
     }
@@ -58,5 +68,13 @@ public class JobModel extends RepresentationModel<JobModel> implements Serializa
 
     public void setCompany_info(String company_info) {
         this.company_info = company_info;
+    }
+
+    public void setJob_style(String job_style) {
+        this.job_style = job_style;
+    }
+
+    public void setJob_location(String job_location) {
+        this.job_location = job_location;
     }
 }
