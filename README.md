@@ -82,5 +82,14 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 
 ## **Front-End(Ainda em desenvolvimento)**
 
+### Imagens: 
+![Captura de tela de 2024-12-23 09-39-22](https://github.com/user-attachments/assets/bfe14155-a047-4a52-9994-0f1dcabe7292)
+
+![Captura de tela de 2024-12-23 09-39-47](https://github.com/user-attachments/assets/7220e997-3689-42ed-af69-034d561bf69f)
+
+![Captura de tela de 2024-12-23 09-47-23](https://github.com/user-attachments/assets/89e291b9-6698-4741-adae-60a3651245c5)
+
+
+
 
 
