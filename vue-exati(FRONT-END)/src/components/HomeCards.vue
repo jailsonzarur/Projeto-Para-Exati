@@ -23,7 +23,7 @@
               Liste a sua oportunidade para achar o melhor profissional!
             </p>
             <a
-              href="add-job.html"
+              href="/jobs/add"
               class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-black"
             >
               Adicionar Oportunidade
