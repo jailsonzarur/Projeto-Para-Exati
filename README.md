@@ -82,6 +82,20 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 
 ## **Front-End(Ainda em desenvolvimento)**
 
+## **Executar o Front-End**
+
+1. Instale as dependências do Projeto:
+   ```bash
+   .npm install
+
+2. Inicialize o projeto:
+   ```bash
+   npm run dev
+
+3. O projeto ficará acessível nesse endereço:
+   ```bash
+   http://localhost:3000
+
 ### Imagens: 
 ![Captura de tela de 2024-12-23 09-39-22](https://github.com/user-attachments/assets/bfe14155-a047-4a52-9994-0f1dcabe7292)
 
