@@ -86,7 +86,7 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 
 1. Instale as dependências do Projeto:
    ```bash
-   .npm install
+   npm install
 
 2. Inicialize o projeto:
    ```bash
