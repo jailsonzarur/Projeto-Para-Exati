@@ -14,7 +14,7 @@ onMounted(async () => {
       jobs.value.push({
         idJob: data[key]["idJob"],
         title: data[key]["title"],
-        job_description: data[key]["description"],
+        job_description: data[key]["job_description"],
         salary: data[key]["salary"],
         company_info: data[key]["company_info"],
         job_style: data[key]["job_style"],
@@ -22,7 +22,6 @@ onMounted(async () => {
       });
     }
 
-    console.log(jobs.value);
   } catch (error) {
     console.error("Erro ao buscar os dados:", error);
   }
@@ -35,7 +34,7 @@ onMounted(async () => {
         <li v-for="job in jobs" :key="job.idJob">
             <Jobs :title="job.title" :description="job.job_description"
             :salary="job.salary" :job_location="job.job_location"
-            :job_style="job.job_style"/>
+            :job_style="job.job_style" :job_id="job.idJob"/>
         </li>
     </ul>
 </template>

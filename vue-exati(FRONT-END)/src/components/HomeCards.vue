@@ -11,7 +11,7 @@
               Procure por um Exati Job e inicie sua carreira hoje mesmo!
             </p>
             <a
-              href="jobs.html"
+              href="/jobs"
               class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
             >
               Busque aqui

@@ -24,7 +24,6 @@ defineProps({
     },
     job_id: {
         type: String,
-        default: 'id'
     }
 })
 
@@ -53,7 +52,7 @@ defineProps({
                   {{  job_location  }}
                 </div>
                 <a
-                  :href="'/jobs/' + job_id"
+                  :href="'/job/' + job_id"
                   class="h-[36px] bg-black text-white px-4 py-2 rounded-lg text-center text-sm"
                 >
                   Veja Mais
