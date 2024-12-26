@@ -103,6 +103,9 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 
 ![Captura de tela de 2024-12-23 09-47-23](https://github.com/user-attachments/assets/89e291b9-6698-4741-adae-60a3651245c5)
 
+![image](https://github.com/user-attachments/assets/f2ce2b83-22b0-49ce-af76-87ef7c7a06ab)
+
+
 
 
 
