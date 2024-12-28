@@ -28,10 +28,10 @@ const addJob = () => {
   }
 
   axios.post('http://localhost:8080/jobs', jobData, {
-  headers: {
-    'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': 'http://localhost:3000',
-  }
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': 'http://localhost:3000',
+    }
   })
   .then(response => {
     console.log(response.data);
@@ -39,6 +39,8 @@ const addJob = () => {
   .catch(error => {
     console.error('Aconteceu um erro!', error);
   });
+
+  location.reload()
 }
 
 </script>

@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps, ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 import axios from 'axios'; 
 
 const title = ref('')
@@ -8,7 +9,9 @@ const salary = ref('')
 const company_info = ref('')
 const job_style = ref('')
 const job_location = ref('')
+const showModal = ref(false)
 
+const router = useRouter()
 
 const props = defineProps({
     jobId: {
@@ -16,6 +19,22 @@ const props = defineProps({
         required: true
     }
 })
+
+async function delete_job(e) {
+  try {
+
+    const response = await axios.delete(`http://localhost:8080/jobs/${props.jobId}`);
+    const data = response.data;
+
+    console.log(data)
+
+    showModal.value = false;
+    router.push('/jobs')
+
+  } catch (error) {
+    console.error("Erro ao buscar os dados:", error);
+  }
+}
 
 onMounted(async () => {
   try {
@@ -46,7 +65,7 @@ onMounted(async () => {
           href="/jobs"
           class="text-black hover:text-black-600 flex items-center"
         >
-          <i class="fas fa-arrow-left mr-2"></i> Voltar à lista de vagas
+          <i class="fas fa-arrow-left mr-2"></i> <- Voltar à lista de vagas
         </a>
       </div>
     </section>
@@ -79,7 +98,7 @@ onMounted(async () => {
                 {{ job_description }}
               </p>
 
-              <h3 class="text-black-800 text-lg font-bold mb-2">Salary</h3>
+              <h3 class="text-black-800 text-lg font-bold mb-2">Salário</h3>
 
               <p class="mb-4">{{ salary }}</p>
             </div>
@@ -100,12 +119,13 @@ onMounted(async () => {
             <div class="bg-white p-6 rounded-lg shadow-md mt-6">
               <h3 class="text-xl font-bold mb-6">Alterar a Vaga</h3>
               <a
-                href="add-job.html"
+                href="/modal-update"
                 class="bg-black hover:bg-black text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >Editar a Vaga</a
               >
               <button
                 class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                @click="showModal = true"
               >
                 Deletar a Vaga
               </button>
@@ -114,4 +134,31 @@ onMounted(async () => {
         </div>
       </div>
     </section>
+
+  <!-- Modal -->
+  <div
+    v-if="showModal"
+    class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50"
+  >
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+      <h2 class="text-lg font-bold mb-4">Confirmar Exclusão</h2>
+      <p class="mb-4">
+        Tem certeza de que deseja deletar a vaga <strong>{{ title }}</strong>?
+      </p>
+      <div class="flex justify-end">
+        <button
+          class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded mr-2"
+          @click="showModal = false"
+        >
+          Cancelar
+        </button>
+        <button
+          class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+          @click="delete_job"
+        >
+          Confirmar
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
