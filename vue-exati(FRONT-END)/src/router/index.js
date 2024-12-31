@@ -3,7 +3,6 @@ import HomeView from '@/views/HomeView.vue'
 import AddJob from '@/components/AddJob.vue'
 import AllJobs from '@/components/AllJobs.vue'
 import Job from '@/components/Job.vue'
-import ModalUpdate from '@/components/ModalUpdate.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,11 +27,6 @@ const router = createRouter({
             name: 'job',
             component: Job,
             props: route => ({ jobId: route.params.id})
-        },
-        {
-            path: '/modal-update',
-            name: 'modal',
-            component: ModalUpdate,
         }
     ],
 })

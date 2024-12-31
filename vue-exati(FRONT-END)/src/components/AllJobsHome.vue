@@ -34,14 +34,21 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div v-if="containJob">
-      <ul>
-        <li v-for="job in jobs" :key="job.idJob">
-            <Jobs :title="job.title" :description="job.job_description"
-            :salary="job.salary" :job_location="job.job_location"
-            :job_style="job.job_style" :job_id="job.idJob"/>
-        </li>
-      </ul>
+    <div v-if="containJob" class="flex flex-wrap gap-4 justify-center">
+        <div
+        v-for="job in jobs"
+        :key="job.idJob"
+        class="max-w-sm w-full sm:w-auto rounded h-96"
+        >
+        <Jobs
+            :title="job.title"
+            :description="job.job_description"
+            :salary="job.salary"
+            :job_location="job.job_location"
+            :job_style="job.job_style"
+            :job_id="job.idJob"
+        />
+        </div>
     </div>
     <div v-else>
       <h2 class="text-3xl font-bold text-gray-500 mb-6 text-center mt-6 m-auto">

@@ -16,9 +16,15 @@ public class JobModel extends RepresentationModel<JobModel> implements Serializa
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idJob;
     private String title;
+
+    @Column(columnDefinition = "TEXT")
     private String job_description;
+
     private BigDecimal salary;
+
+    @Column(columnDefinition = "TEXT")
     private String company_info;
+    
     private String job_style;
     private String job_location;
 

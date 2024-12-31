@@ -38,11 +38,11 @@ defineProps({
                 <h3 class="text-xl font-bold">{{ title }}</h3>
               </div>
 
-              <div class="mb-5">
+              <div class="mb-5 line-clamp-3">
                 {{ description }}
               </div>
 
-              <h3 class="text-black mb-2 font-bold">{{ salary }}</h3>
+              <h3 class="text-black mb-2 font-bold">R$ {{ salary }}</h3>
 
               <div class="border border-gray-100 mb-5"></div>
 
