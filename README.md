@@ -1,4 +1,6 @@
-# **Projeto Exati - Documentação Incompleta(O Front-End está em desenvolvimento)**
+# **Projeto Tech Jobs, Software de busca de vagas de tecnologia - Documentação**
+
+TechJobs é um software inovador desenvolvido para conectar profissionais da área de tecnologia a oportunidades de emprego. Ele simplifica o processo de busca, candidatura e seleção, criando uma experiência eficiente tanto para os candidatos quanto para as empresas.
 
 Este projeto é composto por duas aplicações: um back-end desenvolvido em **Java com Spring Boot** e um front-end construído em **Vue.js** utilizando **Tailwind CSS** para estilização e **Vue Router** para gerenciamento de rotas.
 
@@ -103,7 +105,13 @@ Este sistema permite o gerenciamento de vagas de emprego, com as seguintes funci
 
 ![image](https://github.com/user-attachments/assets/90abf289-27f0-4a48-afa4-a84145d82979)
 
-![image](https://github.com/user-attachments/assets/f2ce2b83-22b0-49ce-af76-87ef7c7a06ab)
+![image](https://github.com/user-attachments/assets/52fb1451-e22d-45bd-8e90-31e172e9f458)
+
+![image](https://github.com/user-attachments/assets/4efa50dd-ac87-4f12-a406-0faa5871636d)
+
+![image](https://github.com/user-attachments/assets/fe537a19-ba8f-42bf-b114-94f517b14da0)
+
+
 
 
 
