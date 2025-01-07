@@ -8,7 +8,7 @@
           <div class="bg-gray-100 p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold">Para Programadores</h2>
             <p class="mt-2 mb-4">
-              Procure por um Exati Job e inicie sua carreira hoje mesmo!
+              Procure por um Tech Job e inicie sua carreira hoje mesmo!
             </p>
             <a
               href="/jobs"

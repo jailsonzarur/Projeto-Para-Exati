@@ -59,8 +59,10 @@ function closeModal() {
 </script>
 
 <template>
-    <section class="bg-white-50 w-1/2 p-6">
-      <div class="container m-auto max-w-2xl py-24">
+  <div class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
+    <section class="bg-white w-full max-w-2xl p-6 rounded-md overflow-hidden overflow-y-auto"
+    style="max-height: 90vh; display: flex; flex-direction: column;">
+      <div class="container m-auto max-w-2xl ">
         <div
           class="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0"
         >
@@ -219,4 +221,5 @@ function closeModal() {
         </div>
       </div>
     </section>
+  </div>
 </template>

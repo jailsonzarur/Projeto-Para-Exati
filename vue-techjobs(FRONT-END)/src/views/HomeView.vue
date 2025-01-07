@@ -6,7 +6,7 @@ import BrowseJobs from '@/components/BrowseJobs.vue';
 
 <template>
     <Slide title="Encontre aqui as melhores oportunidades!" 
-  subtitle="Encontre um Exati Job e otimize operações de infraestrutura e cidades."/>
+  subtitle="Encontre um Tech Job e aprimore suas habilidades nas melhores empresas!."/>
     <HomeCards/>
     <BrowseJobs/>
 </template>

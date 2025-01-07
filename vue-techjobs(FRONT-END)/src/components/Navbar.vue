@@ -10,7 +10,7 @@
           >
             <a class="flex flex-shrink-0 items-center mr-4" href="/">
               <span class="hidden md:block text-black text-2xl font-bold ml-2"
-                >Exati Jobs</span
+                >Tech Jobs</span
               >
             </a>
             <div class="md:ml-auto">
