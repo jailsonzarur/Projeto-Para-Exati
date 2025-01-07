@@ -2,6 +2,7 @@
 import { defineProps, ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import axios from 'axios'; 
+import EditJob from './EditJob.vue';
 
 const title = ref('')
 const job_description = ref('')
@@ -9,7 +10,8 @@ const salary = ref('')
 const company_info = ref('')
 const job_style = ref('')
 const job_location = ref('')
-const showModal = ref(false)
+const showModalDelete = ref(false)
+const showModalEdit = ref(false)
 
 const router = useRouter()
 
@@ -19,6 +21,10 @@ const props = defineProps({
         required: true
     }
 })
+
+function alterShowModalEdit(newAtribute){
+  showModalEdit.value = newAtribute
+}
 
 async function delete_job(e) {
   try {
@@ -118,14 +124,15 @@ onMounted(async () => {
             
             <div class="bg-white p-6 rounded-lg shadow-md mt-6">
               <h3 class="text-xl font-bold mb-6">Alterar a Vaga</h3>
-              <a
-                href="/modal-update"
+              <button
                 class="bg-black hover:bg-black text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-                >Editar a Vaga</a
+                @click="showModalEdit = true"
               >
+                Editar a Vaga
+              </button>
               <button
                 class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-                @click="showModal = true"
+                @click="showModalDelete = true"
               >
                 Deletar a Vaga
               </button>
@@ -135,9 +142,9 @@ onMounted(async () => {
       </div>
     </section>
 
-  <!-- Modal -->
+  <!-- Modal Delete -->
   <div
-    v-if="showModal"
+    v-if="showModalDelete"
     class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50"
   >
     <div class="bg-white p-6 rounded-lg shadow-lg w-96">
@@ -148,7 +155,7 @@ onMounted(async () => {
       <div class="flex justify-end">
         <button
           class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded mr-2"
-          @click="showModal = false"
+          @click="showModalDelete = false"
         >
           Cancelar
         </button>
@@ -160,5 +167,13 @@ onMounted(async () => {
         </button>
       </div>
     </div>
+  </div>
+
+  <!-- Modal Edit -->
+  <div
+    v-if="showModalEdit"
+    class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50"
+  >
+    <EditJob @close_modal="alterShowModalEdit" :job_id="props.jobId"/>
   </div>
 </template>
